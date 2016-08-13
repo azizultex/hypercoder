@@ -13,15 +13,15 @@
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-6">
 							<div class="push " style="height:80px"></div>
-							<a href="#"><span class="fa fa-shopping-cart pull-left"></span><h4>Our Shop</h4></a>
+							<a href="#"><span class="fa fa-shopping-cart pull-left"></span><h4>Our Blog</h4></a>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-6">
 							<div class="push " style="height:80px"></div>
-							<a href="#"><span class="fa fa-database pull-left"></span><h4>Our Portfolio</h4></a>
+							<a href="#"><span class="fa fa-database pull-left"></span><h4>Our Theme Directory</h4></a>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-6">
 							<div class="push " style="height:80px"></div>
-							<a href="#"><span class="fa fa-shopping-cart pull-left"></span><h4>Our Shop</h4></a>
+							<a href="#"><span class="fa fa-shopping-cart pull-left"></span><h4>Support Center</h4></a>
 						</div>
 					</div>
 				</div>
@@ -38,6 +38,7 @@
 							<?php echo $copyright_text; ?>
 						</div>
 					</div>
+					<div class="scroll-top"><a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a></div>
 				</div>
 			</div>
 		</footer>

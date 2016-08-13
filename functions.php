@@ -109,6 +109,8 @@ function hypercoder_scripts() {
 	/* CSS */
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css' );
 	wp_enqueue_style( 'rangeslider_css', get_template_directory_uri() . '/css/rangeslider.css' );
+	wp_enqueue_style( 'owl-carousel', get_template_directory_uri() . '/css/owl.carousel.css' );
+	wp_enqueue_style( 'owl.theme', get_template_directory_uri() . '/css/owl.theme.css' );
 	wp_enqueue_style( 'reset_css', get_template_directory_uri() . '/css/reset.css' );
 	wp_enqueue_style( 'hypercoder-style', get_stylesheet_uri() );
 	wp_enqueue_style('font_awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
@@ -117,9 +119,10 @@ function hypercoder_scripts() {
 	/* Scripts */
 	wp_enqueue_script('jquery');
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true );
+	wp_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), '', true );
 	wp_enqueue_script( 'rangeslider', get_template_directory_uri() . '/js/rangeslider.min.js', array('jquery'), '', true );
 	wp_enqueue_script( 'custom', get_template_directory_uri() . '/js/custom.js', array('jquery'), '', true );
-
+	wp_enqueue_script('isotope', 'http://arabella.elitefingers.com/html/js/vendor/isotope.pkgd.min.js');
 	wp_enqueue_script( 'hypercoder-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'hypercoder-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );

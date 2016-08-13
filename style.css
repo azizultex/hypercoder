@@ -70,6 +70,7 @@ a {
 a:hover, a:focus {
     color: #ff3d19;
 	outline: 0;
+    text-decoration: none;
 }
 input, textarea {
 	width: 100%;
@@ -691,6 +692,327 @@ section {
 	}
 }
 
+/*--------------------------- Portfolio --------------------*/
+#portfolio {
+    position: relative;
+    background-color: #F2F2F2;
+    background-size: cover;
+}
+
+.portfolio-wrapper{
+    clear: both;
+}
+
+.works-filter {
+    margin-left: 10px;
+    padding: 25px 0;
+}
+.works-filter a{
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 5px;
+    color: #898989;
+    font-size: 24px;
+    font-size: 4vmin;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.works-filter a.active{
+    color: #F0542D;
+}
+
+.works-filter a:before{
+    content: " / ";
+    padding-right: 5px;
+    padding-left: 5px;
+    color: #898989;
+}
+
+.works-filter a:first-child:before{
+    content: "  ";
+    padding-right: 5px;
+    padding-left: 5px;
+    color: #111111;
+}
+
+
+
+#work-grid{
+    height: 80%;
+    height: 480px;
+}
+
+/* Height of 3 column Portfolio */
+.masonry-height{
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.height-3column{
+    height: 395px;
+    margin-bottom: 30px;
+}
+
+.height-4column{
+    margin-bottom: 30px;
+    height: 230px;
+}
+
+.img{
+    position: relative;
+    overflow: hidden;
+    display: inherit;
+}
+
+.img img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -moz-transition: opacity 0.35s, -moz-transform 0.35s;
+    -o-transition: opacity 0.35s, -o-transform 0.35s;
+}
+
+.img:hover img{
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+    transform: scale(1.04);
+}
+
+.hover-overlay{
+    opacity: 0;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.overlay-view{
+    display: table;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+}
+
+.hover-overlay-inner {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background: rgba(240,84,45, .6);
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.overlay-view a{
+    width: 100%;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+}
+
+
+.project-name, .category-description {
+    color: #FFF;
+    text-transform: uppercase;
+}
+.project-name {
+    font-size: 20px;
+}
+
+.split-line{
+    width: 14px;
+    height: 2px;
+    background: #000;
+    border: 0;
+    margin: 20px auto;
+}
+
+.overlay-view span{
+    display: block;
+    text-align: center;
+    
+}
+.overlay-view span:hover{
+ -webkit-transition: all 200ms ease-in-out 0;
+ -moz-transition: all 200ms ease-in-out 0;
+ -o-transition: all 200ms ease-in-out 0;
+ transition: all 200ms ease-in-out 0;
+
+}
+
+.hover-overlay:hover{
+    opacity: 1;
+}
+
+
+/*------------------- Single Portfolio --------------------*/
+#single_portfolio {
+    background-color: #F2F2F2;
+}
+
+.next-slide, .prev-slide{
+    width: 35px;
+    height: 25px;
+    border: 1px solid #F0542D;
+    display: inline-block;
+    text-align: center;    
+    cursor: pointer;
+}
+
+.next-slide:hover, .prev-slide:hover{
+    background: #F0542D;
+    color: #fff;
+}
+
+.next-slide a:hover, .prev-slide a:hover {
+    color: inherit;
+}
+
+.single-portfolio{
+    position: relative;
+}
+
+.single-portfolio-slider {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.owl-carousel.single-portfolio-slider, .single-portfolio-slider .owl-item{
+    padding:0;
+}
+
+.single-portfolio-slider img{
+    max-width: 100%;
+}
+
+.controls-portfolio{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    margin: 0 auto;
+}
+
+.content-portfolio{
+}
+
+.content-portfolio h4, .portfolio-tags h4{
+    font-weight: 700;
+}
+
+.portfolio-tags{
+    padding: 50px 0 0;
+}
+
+.portfolio-tags li {
+    margin: 0 0 5px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.portfolio-tags li a{
+    background: #fff;
+    padding: 8px 13px;
+}
+
+
+.portfolio-tags li a {
+    background: #fff;
+    padding: 10px;
+    display: block;
+    text-transform: uppercase;
+}
+.portfolio-tags li:hover a {
+    background: #F0542D;
+    color: #fff;
+}
+
+.portfolio-controls {
+    overflow: hidden;
+    display: block;
+    margin: 50px 0 0;
+}
+.portfolio-controls a {
+    display: block;
+    width: 100%;
+    background: #fff;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 900;
+    float: left;
+}
+.portfolio-controls a:hover{
+    color: #F0542D;
+}
+
+.portfolio-controls span{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.portfolio-controls i.left, .portfolio-controls i.right{
+    font-size: 40px;
+    line-height: inherit;
+}
+
+.back-btn, .home-btn, .forward-btn{
+    float: left;
+    line-height: 80px;
+}
+
+i.right{
+    float: right; 
+}
+
+i.left{
+    float: left;
+}
+
+.back-btn{
+    width: 45%;
+}
+
+.back-btn a{
+   padding-left: 30px;
+}
+
+.home-btn{
+    width: 10%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.home-btn a{
+    text-align: center;
+    display: block;
+    float: left;
+}
+.home-btn i{
+   font-size: 30px;
+   float: left;
+   width: 100%;
+   line-height: 80px;
+}
+
+.forward-btn{
+    width: 45%;
+}
+
+.forward-btn a{
+    text-align: right;
+    padding-right: 30px;
+}
+
+
 /*---------------------------- Footer ----------------------*/
 footer {
     background: url(img/footer-bg.jpg) no-repeat center bottom scroll;
@@ -790,4 +1112,31 @@ footer {
 		margin-bottom: 30px;
 	}
 	
+}
+
+/* Scroll to top */
+.back-to-top {
+    margin: 0;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    z-index: 9999;
+    bottom: 10px;
+    display: none;
+    color: #ffffff;
+    position: fixed;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #F0542D;
+}
+.back-to-top:hover {
+    background-color: #ff3d19;
+    color: #fff;
+}
+.back-to-top i {
+    font-size: 30px;
+    padding: 3px 10px;
 }
