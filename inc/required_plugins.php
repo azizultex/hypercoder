@@ -66,8 +66,8 @@ function oo__register_required_plugins() {
 			'required'  => true,
 		),
 		array(
-			'name'      => 'Post Types Order',
-			'slug'      => 'post-types-order',
+			'name'      => 'Kirki',
+			'slug'      => 'kirki',
 			'required'  => true,
 		),
 		array(

@@ -5,60 +5,72 @@ Template name: FrontPage
  get_header(); ?>
 		<section id="home_banner">
 			<div class="container">
-				<div class="row">
+				<div class="row title">
 					<div class="col-md-12">
-						<div class="booking_from_wrap">
-							<h1 class="main_title text-center">Profetional maid and cleaning services</h1>
-							<div class="booking_from">
-								<form method="post" action="demoform.asp">
-									<div class="group-control col-md-12">
-										<div class="col-md-3">
-											<label for="bedroom">Bedrooms: <output></output></label>
-										</div>
-										<div class="col-md-9">
-											<input type="range" name="bedroom" id="bedroom" min="0" max="6" data-rangeslider>
-										</div>
-									</div>
-									<div class="group-control col-md-12">
-										<div class="col-md-3">
-											<label for="bathrooms">Bathrooms: <output></output></label>
-										</div>
-										<div class="col-md-9">
-											<input type="range" name="bathrooms" id="bathrooms" min="0" max="6" data-rangeslider>
-										</div>
-									</div>
-									<div class="group-control col-md-12">
-										<div class="col-md-3">
-											<label for="zip">Zip Code:</label>
-										</div>
-										<div class="col-md-9">
-											<input type="number" name="zip" id="zip" placeholder="Zip Code">
-										</div>
-									</div>
-									
-									<div class="group-control text-center col-md-12">
-										<div class="col-md-3">
-											<label for="lcleaning">Select services type:</label>
-										</div>
-										<div class="col-md-9">
-											<div class="radio_btn">
-												<input type="radio" name="cleaning" id="lcleaning" value="Light Clean" checked><label for="lcleaning">Light Clean</label>
-											</div>
-									
-											<div class="radio_btn">
-												<input type="radio" name="cleaning" id="fcleaning" value="Full Clean"><label for="fcleaning">Full Clean</label>
-											</div>
-											<div class="radio_btn">
-												<input type="radio" name="cleaning" id="dcleaning" value="Deep Clean"><label for="dcleaning">Deep Clean</label> 
-											</div>
-										</div>
-									</div>
-									
-									<div class="group-control no_padding col-md-12">
-										<input type="submit" value="Book Now!" class="btn custom_btn">
-									</div>
-								</form>
-							</div>
+						<h2 class="text-center">What we do</h2>
+						<h4 class="text-center">Eleifend mi iaculis parturient etiam volutpat pulvinar eleifend</h4>
+					</div>
+				</div>	
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="banner_item btn-primary" data-wow-offset="10">
+		                    <div class="col-md-3">
+		                   		<i class="fa fa-cogs fa-3x"></i>
+		                    </div>
+		                    <div class="col-md-9">
+		                   		<h4>Development</h4>
+		                    </div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="banner_item btn-success" data-wow-offset="10">
+                        	<div class="col-md-3">
+		                   		<i class="fa fa-paint-brush fa-3x"></i>
+		                    </div>
+		                    <div class="col-md-9">
+		                   		<h4>UI/UX</h4>
+		                    </div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="banner_item btn-info" data-wow-offset="10">
+                      		<div class="col-md-3">
+		                   		<i class="fa fa-bullhorn fa-3x"></i>
+		                    </div>
+		                    <div class="col-md-9">
+		                   		<h4>Social Marketing</h4>
+		                    </div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="banner_item btn-warning" data-wow-offset="20">
+							<div class="col-md-3">
+		                   		<i class="fa fa-database fa-3x"></i>
+		                    </div>
+		                    <div class="col-md-9">
+		                   		<h4>System Design</h4>
+		                    </div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="banner_item btn-danger" data-wow-offset="20">
+							<div class="col-md-3">
+		                   		<i class="fa fa-align-left fa-3x"></i>
+		                    </div>
+		                    <div class="col-md-9">
+		                   		<h4>Copywriting</h4>
+		                    </div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="banner_item btn-warning" data-wow-offset="20">
+                      		<div class="col-md-3">
+		                   		<i class="fa fa-camera fa-3x"></i>
+		                    </div>
+		                    <div class="col-md-9">
+		                   		<h4>Photography</h4>
+		                    </div>
 						</div>
 					</div>
 				</div>

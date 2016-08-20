@@ -86,6 +86,9 @@ input:hover, input:focus, input:active, textarea:hover, textarea:focus, textarea
 section {
 	padding: 50px 0;
 }
+.title {
+    padding-bottom: 30px;
+}
 .clearfix {
 	clear: both;
 	overflow:hidden;
@@ -96,7 +99,7 @@ section {
     padding: 10px 20px;
     display: inline-block;
     box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
-    background-color: #F0542D;
+    background-color: #02c39a;
     color: #fff;
     border-radius: 0;
 	transition: all 0.3s ease-in-out;
@@ -104,7 +107,7 @@ section {
 .custom_btn:hover {
 	color: #fff;
     text-decoration: none;
-	background-color: #ff3d19;
+	background-color: #05668d;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.18);
 }
 .no_padding {
@@ -113,14 +116,14 @@ section {
 /*----------------------- Header CSS --------------------------*/
 .header_top {
     padding: 8px 0;
-    background-color: #7c8a8d;
+    background-color: #05668d;
 }
 .header_top p {
-    color: #CCD0D0;
+    color: #FFF;
     font-size: 14px;
 }
 .social_media li a {
-    color: #CCD0D0;
+    color: #FFF;
 }
 .social_media li a:hover span {
     color: #fff;
@@ -136,7 +139,7 @@ section {
     padding-left: 10px;
     font-size: 17px;
     font-family: 'Source Sans Pro', sans-serif;
-    color: #ff684c;
+    color: #FFF;
 }
 
 /* Navbar */
@@ -174,22 +177,22 @@ section {
 	border-bottom: solid 3px transparent;
 }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: #F0542D;
-    border-color: #F0542D;
+    color: #02c39a;
+    border-color: #02c39a;
 }
 .navbar-default .navbar-toggle {
     border-color: transparent;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #F0542D;
+    background-color: #02c39a;
     height: 4px;
 }
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: transparent;
 }
 .navbar-default .navbar-toggle:focus .icon-bar, .navbar-default .navbar-toggle:hover .icon-bar {
-    background-color: #ff3d19;
+    background-color: #02c39a;
 }
 @media (min-width: 768px){
 	.navbar-nav>li>a {
@@ -264,149 +267,67 @@ section {
     background-color: rgba(0,0,0,0.5);
     content: "";
 }
-.booking_from {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 30px 20px;
-    display: block;
-    overflow: hidden;
-    width: 81%;
-    margin: 0 auto;
-    border: 1px dashed rgba(255,255,255,0.2);
-}
-.booking_from_wrap .main_title {
-    color: #FFF;
-	font-size: 50px;
-	margin-bottom: 10px;
-}
-.booking_from_wrap .subtitle {
-    color: #FFF;
-    font-size: 22px;
-}
-.booking_from_wrap .subtitle  a{
-    color: #F0542D;
-}
-.group-control {
-    display: block;
-    overflow: hidden;
-    padding: 15px 0;
-}
-.group-control label {
-    font-size: 18px;
-    color: #fff;
-    font-weight: 400;
-    text-align: left;
-    display: block;
-}
-.group-control output {
-    font-size: 18px;
-    padding: 0 0 0 10px;
-}
-.booking_from output {
-    display: inline-block;
-    padding-top: 0;
-	color: #FFF;
-}
-.booking_from #zip {
-	padding-left: 20px;
-	color: #FFF;
-}
-
-.radio_btn {
-    display: inline-block;
-    margin: 0 20px;
-}
-.radio_btn input[type="radio"] { 
-  display:none; 
-}
-.radio_btn label {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #FFFFFF;
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 0.1px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 3px;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-.radio_btn input[type="radio"]:checked + label {
-    background-color: #36373B;
+#home_banner .title h2 {
     color: #FFF;
 }
-
-
-.group-control input:focus, 
-.group-control select:focus, 
-.group-control textarea:focus {
-    outline: 0;
+#home_banner .title h4 {
+    color: #898989;
 }
 
-#zip::-webkit-input-placeholder{
-  color: #FFF;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
-}
-
-#zip:-moz-placeholder {
-  color: #FFF;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
-}
-
-#zip::-moz-placeholder {
-  color: #FFF;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
-}
-
-#zip:-ms-input-placeholder {
-  color: #FFF;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
-}
-
-.booking_from .custom_btn {
-    width: 200px;
-    margin: 20px auto 0;
-    display: block;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-
-/* Plugin css edit */
-.rangeslider {
+.banner_item {
+    border-radius: 5px;
+    padding: 20px 20px 10px;
+    margin: 15px 0;
     position: relative;
-    border: 1px solid rgba(255,255,255,0.5);
-    box-shadow: none;
-    height: 12px;
-    background-color: transparent;
-	margin-top: 7px;
+    color: #fff;
+    overflow: hidden;
+    -webkit-transition: background .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out;
+    transition: background .5s ease-in-out;
 }
-.rangeslider__fill {
-    background: transparent;
-    position: absolute;
-    display: none;
+.banner_item h4{
+    margin:10px 0 0;
+    padding: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
-.rangeslider__handle {
-    background: url(img/slider.png) no-repeat center center !important;
-    border-radius: 0 !important;
-    box-shadow: none;
-    border: 0;
-	top: -14px !important;
+.banner_item i{
+    color: rgba(240,84,45, 1); 
+    padding: 0;
+    margin: 0 0 10px 0;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
-.rangeslider__handle:after {
-    background-image: none;
+.banner_item:hover{
+    background:#02c39a; 
+    -webkit-transition: background .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out;
+    transition: background .2s ease-in-out;
 }
-@media (max-width: 768px){
-	.booking_from {
-		width: 100%;
-		padding: 20px 10px;
-	}
-	.group-control label {
-		margin-bottom: 15px;
-	}
+.banner_item:hover h4{
+    color:#fff;
+    transform: translate(0,-5px);
+    -webkit-transform: translate(0,-5px);
+    -o-transform: translate(0,-5px); 
+    -moz-transform: translate(0,-5px);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.banner_item:hover i{
+    color:#fff;
+    transform: translate(0,-5px);
+    -webkit-transform: translate(0,-5px);
+    -o-transform: translate(0,-5px); 
+    -moz-transform: translate(0,-5px);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
 
-}
+
 /*----------------------- Easy Steps -----------------------------*/
 #easy_steps {
     position: relative;
@@ -446,7 +367,7 @@ section {
     position: relative;
 }
 .step_box .wrap span{
-	color: #F0542D;
+	color: #02c39a;
     font-size: 75px;
     text-shadow: 1px 0px 1px rgba(255,255,255,0.7);
     line-height: 150px;
@@ -490,7 +411,7 @@ section {
     transition: all 200ms linear;
 }
 .step_box:hover{
-	background: #F0542D;
+	background: #02c39a;
 }
 .step_box:hover .wrap span{
     font-size: 100px;
@@ -600,7 +521,7 @@ section {
     background-color: #EDEDED;
 }
 .call_item h3 {
-    color: #F0542D;
+    color: #02c39a;
 	margin-bottom: 10px;
     text-transform: uppercase;
 }
@@ -642,9 +563,10 @@ section {
     z-index: 9;
 	text-align: center;
 }
+
 .service_icon{
-    border-left: 2px solid #F0542D;
-    border-right: 2px solid #F0542D;
+    border-left: 2px solid #02c39a;
+    border-right: 2px solid #02c39a;
     box-sizing: border-box;
     height: 66.97px;
     margin: 50.49px auto;
@@ -653,18 +575,18 @@ section {
     transform: rotate(0.0001deg);
     width: 116px;
     text-align: center;
-    color: #F0542D;
+    color: #02c39a;
     font-size: 60px;
     line-height: 66.97px;
 }
 .service_icon::after{
-    border-bottom: 3px solid #F0542D;
-    border-left: 3px solid #F0542D;
+    border-bottom: 3px solid #02c39a;
+    border-left: 3px solid #02c39a;
     bottom: -41.012px;
 }
 .service_icon::before{
-    border-right: 3px solid #F0542D;
-    border-top: 3px solid #F0542D;
+    border-right: 3px solid #02c39a;
+    border-top: 3px solid #02c39a;
     top: -41.0122px;
 }
 .service_icon::after, .service_icon::before{
@@ -676,7 +598,27 @@ section {
     -webkit-transform: scaleY(0.5774) rotate(-45deg);
     transform: scaleY(0.5774) rotate(-45deg);
     width: 82.02px;
-    z-index: 1;
+    z-index: -1;
+}
+.service_box:hover .service_icon {
+    border-left: 2px solid #02c39a;
+    border-right: 2px solid #02c39a;
+    color: #FFF;
+    background: #02c39a;
+    transition: all 0.3s ease-in-out;
+}
+.service_box:hover .service_icon::after {
+    border-bottom: 3px solid #02c39a;
+    border-left: 3px solid #02c39a;
+    background: #02c39a;
+    transition: all 0.3s ease-in-out;
+
+}
+.service_box:hover .service_icon::before {
+    border-right: 3px solid #02c39a;
+    border-top: 3px solid #02c39a;
+    background: #02c39a;
+    transition: all 0.3s ease-in-out;
 }
 .service_box h3 {
     margin: 10px auto;
@@ -802,7 +744,7 @@ section {
 .hover-overlay-inner {
     width: calc(100% - 20px);
     height: calc(100% - 20px);
-    background: rgba(240,84,45, .6);
+    background: rgba(37,194,150, .6);
     position: absolute;
     top: 10px;
     left: 0;
@@ -831,7 +773,7 @@ section {
 .split-line{
     width: 14px;
     height: 2px;
-    background: #000;
+    background: #05668d;
     border: 0;
     margin: 20px auto;
 }
